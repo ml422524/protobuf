@@ -1,0 +1,638 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{52B8405F-D0FE-38A4-8BCD-BBEFBAD2242F}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>lite-arena-test</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:\cpp_workspace\protobuf\project.win32\Debug\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">lite-arena-test.dir\Debug\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">lite-arena-test</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.exe</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:\cpp_workspace\protobuf\project.win32\Release\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">lite-arena-test.dir\Release\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">lite-arena-test</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.exe</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:\cpp_workspace\protobuf\project.win32\MinSizeRel\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">lite-arena-test.dir\MinSizeRel\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">lite-arena-test</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.exe</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">true</GenerateManifest>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:\cpp_workspace\protobuf\project.win32\RelWithDebInfo\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">lite-arena-test.dir\RelWithDebInfo\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">lite-arena-test</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.exe</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</GenerateManifest>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalOptions> /bigobj %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>E:\cpp_workspace\protobuf\project.win32;E:\cpp_workspace\protobuf\src;E:\cpp_workspace\protobuf\gmock;E:\cpp_workspace\protobuf\gmock\gtest;E:\cpp_workspace\protobuf\gmock\gtest\include;E:\cpp_workspace\protobuf\gmock\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4244;4267;4018;4355;4800;4251;4996;4146;4305;4309</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;GOOGLE_PROTOBUF_TEST_PLUGIN_PATH="E:/cpp_workspace/protobuf/project.win32/Debug/test_plugin.exe";GOOGLE_PROTOBUF_CMAKE_BUILD;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;GOOGLE_PROTOBUF_TEST_PLUGIN_PATH=\"E:/cpp_workspace/protobuf/project.win32/Debug/test_plugin.exe\";GOOGLE_PROTOBUF_CMAKE_BUILD;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\cpp_workspace\protobuf\project.win32;E:\cpp_workspace\protobuf\src;E:\cpp_workspace\protobuf\gmock;E:\cpp_workspace\protobuf\gmock\gtest;E:\cpp_workspace\protobuf\gmock\gtest\include;E:\cpp_workspace\protobuf\gmock\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\cpp_workspace\protobuf\project.win32;E:\cpp_workspace\protobuf\src;E:\cpp_workspace\protobuf\gmock;E:\cpp_workspace\protobuf\gmock\gtest;E:\cpp_workspace\protobuf\gmock\gtest\include;E:\cpp_workspace\protobuf\gmock\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;Debug\libprotobuf-lited.lib;Debug\gmock_main.lib;Debug\gmock.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/cpp_workspace/protobuf/project.win32/Debug/lite-arena-test.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/cpp_workspace/protobuf/project.win32/Debug/lite-arena-test.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalOptions> /bigobj %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>E:\cpp_workspace\protobuf\project.win32;E:\cpp_workspace\protobuf\src;E:\cpp_workspace\protobuf\gmock;E:\cpp_workspace\protobuf\gmock\gtest;E:\cpp_workspace\protobuf\gmock\gtest\include;E:\cpp_workspace\protobuf\gmock\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4244;4267;4018;4355;4800;4251;4996;4146;4305;4309</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;GOOGLE_PROTOBUF_TEST_PLUGIN_PATH="E:/cpp_workspace/protobuf/project.win32/Release/test_plugin.exe";GOOGLE_PROTOBUF_CMAKE_BUILD;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat></DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;GOOGLE_PROTOBUF_TEST_PLUGIN_PATH=\"E:/cpp_workspace/protobuf/project.win32/Release/test_plugin.exe\";GOOGLE_PROTOBUF_CMAKE_BUILD;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\cpp_workspace\protobuf\project.win32;E:\cpp_workspace\protobuf\src;E:\cpp_workspace\protobuf\gmock;E:\cpp_workspace\protobuf\gmock\gtest;E:\cpp_workspace\protobuf\gmock\gtest\include;E:\cpp_workspace\protobuf\gmock\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\cpp_workspace\protobuf\project.win32;E:\cpp_workspace\protobuf\src;E:\cpp_workspace\protobuf\gmock;E:\cpp_workspace\protobuf\gmock\gtest;E:\cpp_workspace\protobuf\gmock\gtest\include;E:\cpp_workspace\protobuf\gmock\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;Release\libprotobuf-lite.lib;Release\gmock_main.lib;Release\gmock.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/cpp_workspace/protobuf/project.win32/Release/lite-arena-test.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/cpp_workspace/protobuf/project.win32/Release/lite-arena-test.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AdditionalOptions> /bigobj %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>E:\cpp_workspace\protobuf\project.win32;E:\cpp_workspace\protobuf\src;E:\cpp_workspace\protobuf\gmock;E:\cpp_workspace\protobuf\gmock\gtest;E:\cpp_workspace\protobuf\gmock\gtest\include;E:\cpp_workspace\protobuf\gmock\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4244;4267;4018;4355;4800;4251;4996;4146;4305;4309</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;GOOGLE_PROTOBUF_TEST_PLUGIN_PATH="E:/cpp_workspace/protobuf/project.win32/MinSizeRel/test_plugin.exe";GOOGLE_PROTOBUF_CMAKE_BUILD;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat></DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;GOOGLE_PROTOBUF_TEST_PLUGIN_PATH=\"E:/cpp_workspace/protobuf/project.win32/MinSizeRel/test_plugin.exe\";GOOGLE_PROTOBUF_CMAKE_BUILD;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\cpp_workspace\protobuf\project.win32;E:\cpp_workspace\protobuf\src;E:\cpp_workspace\protobuf\gmock;E:\cpp_workspace\protobuf\gmock\gtest;E:\cpp_workspace\protobuf\gmock\gtest\include;E:\cpp_workspace\protobuf\gmock\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\cpp_workspace\protobuf\project.win32;E:\cpp_workspace\protobuf\src;E:\cpp_workspace\protobuf\gmock;E:\cpp_workspace\protobuf\gmock\gtest;E:\cpp_workspace\protobuf\gmock\gtest\include;E:\cpp_workspace\protobuf\gmock\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;MinSizeRel\libprotobuf-lite.lib;MinSizeRel\gmock_main.lib;MinSizeRel\gmock.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/cpp_workspace/protobuf/project.win32/MinSizeRel/lite-arena-test.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/cpp_workspace/protobuf/project.win32/MinSizeRel/lite-arena-test.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalOptions> /bigobj %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>E:\cpp_workspace\protobuf\project.win32;E:\cpp_workspace\protobuf\src;E:\cpp_workspace\protobuf\gmock;E:\cpp_workspace\protobuf\gmock\gtest;E:\cpp_workspace\protobuf\gmock\gtest\include;E:\cpp_workspace\protobuf\gmock\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4244;4267;4018;4355;4800;4251;4996;4146;4305;4309</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;GOOGLE_PROTOBUF_TEST_PLUGIN_PATH="E:/cpp_workspace/protobuf/project.win32/RelWithDebInfo/test_plugin.exe";GOOGLE_PROTOBUF_CMAKE_BUILD;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;GOOGLE_PROTOBUF_TEST_PLUGIN_PATH=\"E:/cpp_workspace/protobuf/project.win32/RelWithDebInfo/test_plugin.exe\";GOOGLE_PROTOBUF_CMAKE_BUILD;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\cpp_workspace\protobuf\project.win32;E:\cpp_workspace\protobuf\src;E:\cpp_workspace\protobuf\gmock;E:\cpp_workspace\protobuf\gmock\gtest;E:\cpp_workspace\protobuf\gmock\gtest\include;E:\cpp_workspace\protobuf\gmock\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\cpp_workspace\protobuf\project.win32;E:\cpp_workspace\protobuf\src;E:\cpp_workspace\protobuf\gmock;E:\cpp_workspace\protobuf\gmock\gtest;E:\cpp_workspace\protobuf\gmock\gtest\include;E:\cpp_workspace\protobuf\gmock\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;RelWithDebInfo\libprotobuf-lite.lib;RelWithDebInfo\gmock_main.lib;RelWithDebInfo\gmock.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/cpp_workspace/protobuf/project.win32/RelWithDebInfo/lite-arena-test.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/cpp_workspace/protobuf/project.win32/RelWithDebInfo/lite-arena-test.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\cpp_workspace\protobuf\cmake\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule E:/cpp_workspace/protobuf/cmake/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"D:\Program Files (x86)\CMake\bin\cmake.exe" -HE:/cpp_workspace/protobuf/cmake -BE:/cpp_workspace/protobuf/project.win32 --check-stamp-file E:\cpp_workspace\protobuf\project.win32\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/cpp_workspace/protobuf/cmake/CMakeLists.txt;E:\cpp_workspace\protobuf\cmake\CMakeLists.txt;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeDetermineSystem.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeSystem.cmake.in;E:\cpp_workspace\protobuf\project.win32\CMakeFiles\3.6.1\CMakeSystem.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeSystemSpecificInitialize.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeDetermineCCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeDetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeDetermineCompilerId.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeCompilerIdDetection.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeParseArguments.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\ADSP-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\ARMCC-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\AppleClang-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\Borland-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\Clang-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\Cray-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\GHS-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\GNU-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\HP-C-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\IAR-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\Intel-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\MIPSpro-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\MSVC-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\PGI-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\PathScale-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\SCO-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\TI-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\Watcom-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\XL-C-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\zOS-C-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CompilerId\VS-10.vcxproj.in;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeFindBinUtils.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeCCompiler.cmake.in;E:\cpp_workspace\protobuf\project.win32\CMakeFiles\3.6.1\CMakeCCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeDetermineCXXCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeDetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Platform\Windows-CXX.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeDetermineCompilerId.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeCompilerIdDetection.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeParseArguments.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\ADSP-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\ARMCC-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\AppleClang-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\Borland-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\Clang-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\Cray-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\GHS-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\GNU-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\IAR-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\Intel-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\MIPSpro-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\MSVC-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\PGI-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\PathScale-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\SCO-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\TI-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\Watcom-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CompilerId\VS-10.vcxproj.in;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeFindBinUtils.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeCXXCompiler.cmake.in;E:\cpp_workspace\protobuf\project.win32\CMakeFiles\3.6.1\CMakeCXXCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeSystemSpecificInformation.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeGenericSystem.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Platform\Windows.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Platform\WindowsPaths.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeCInformation.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeLanguageInformation.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Platform\Windows-MSVC-C.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Platform\Windows-MSVC.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeDetermineRCCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeRCCompiler.cmake.in;E:\cpp_workspace\protobuf\project.win32\CMakeFiles\3.6.1\CMakeRCCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeRCInformation.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeTestRCCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeCommonLanguageInclude.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeTestCCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeTestCompilerCommon.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeDetermineCompilerABI.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeParseImplicitLinkInfo.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeCCompilerABI.c;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeDetermineCompileFeatures.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeCCompiler.cmake.in;E:\cpp_workspace\protobuf\project.win32\CMakeFiles\3.6.1\CMakeCCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeCXXInformation.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeLanguageInformation.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\MSVC-CXX.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Platform\Windows-MSVC.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeCommonLanguageInclude.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeTestCXXCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeTestCompilerCommon.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeDetermineCompilerABI.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeParseImplicitLinkInfo.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeCXXCompilerABI.cpp;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeDetermineCompileFeatures.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Internal\FeatureTesting.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\MSVC-CXX-FeatureTests.cmake;E:\cpp_workspace\protobuf\project.win32\CMakeFiles\feature_tests.cxx;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeCXXCompiler.cmake.in;E:\cpp_workspace\protobuf\project.win32\CMakeFiles\3.6.1\CMakeCXXCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeDependentOption.cmake;E:\cpp_workspace\protobuf\cmake\protobuf-options.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\FindThreads.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CheckLibraryExists.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CheckSymbolExists.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CheckIncludeFile.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CheckIncludeFile.c.in;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\FindPackageHandleStandardArgs.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\FindPackageMessage.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeParseArguments.cmake;E:\cpp_workspace\protobuf\cmake\extract_includes.bat.in;E:\cpp_workspace\protobuf\cmake\libprotobuf-lite.cmake;E:\cpp_workspace\protobuf\cmake\libprotobuf.cmake;E:\cpp_workspace\protobuf\cmake\libprotoc.cmake;E:\cpp_workspace\protobuf\cmake\protoc.cmake;E:\cpp_workspace\protobuf\cmake\tests.cmake;E:\cpp_workspace\protobuf\cmake\install.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\GNUInstallDirs.cmake;E:\cpp_workspace\protobuf\cmake\protobuf.pc.cmake;E:\cpp_workspace\protobuf\cmake\protobuf-lite.pc.cmake;E:\cpp_workspace\protobuf\cmake\protobuf-config.cmake.in;E:\cpp_workspace\protobuf\cmake\protobuf-config-version.cmake.in;E:\cpp_workspace\protobuf\cmake\protobuf-module.cmake.in;E:\cpp_workspace\protobuf\cmake\protobuf-options.cmake;E:\cpp_workspace\protobuf\cmake\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:\cpp_workspace\protobuf\project.win32\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule E:/cpp_workspace/protobuf/cmake/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"D:\Program Files (x86)\CMake\bin\cmake.exe" -HE:/cpp_workspace/protobuf/cmake -BE:/cpp_workspace/protobuf/project.win32 --check-stamp-file E:\cpp_workspace\protobuf\project.win32\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/cpp_workspace/protobuf/cmake/CMakeLists.txt;E:\cpp_workspace\protobuf\cmake\CMakeLists.txt;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeDetermineSystem.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeSystem.cmake.in;E:\cpp_workspace\protobuf\project.win32\CMakeFiles\3.6.1\CMakeSystem.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeSystemSpecificInitialize.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeDetermineCCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeDetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeDetermineCompilerId.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeCompilerIdDetection.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeParseArguments.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\ADSP-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\ARMCC-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\AppleClang-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\Borland-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\Clang-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\Cray-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\GHS-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\GNU-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\HP-C-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\IAR-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\Intel-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\MIPSpro-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\MSVC-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\PGI-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\PathScale-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\SCO-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\TI-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\Watcom-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\XL-C-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\zOS-C-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CompilerId\VS-10.vcxproj.in;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeFindBinUtils.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeCCompiler.cmake.in;E:\cpp_workspace\protobuf\project.win32\CMakeFiles\3.6.1\CMakeCCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeDetermineCXXCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeDetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Platform\Windows-CXX.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeDetermineCompilerId.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeCompilerIdDetection.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeParseArguments.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\ADSP-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\ARMCC-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\AppleClang-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\Borland-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\Clang-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\Cray-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\GHS-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\GNU-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\IAR-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\Intel-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\MIPSpro-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\MSVC-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\PGI-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\PathScale-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\SCO-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\TI-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\Watcom-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CompilerId\VS-10.vcxproj.in;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeFindBinUtils.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeCXXCompiler.cmake.in;E:\cpp_workspace\protobuf\project.win32\CMakeFiles\3.6.1\CMakeCXXCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeSystemSpecificInformation.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeGenericSystem.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Platform\Windows.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Platform\WindowsPaths.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeCInformation.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeLanguageInformation.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Platform\Windows-MSVC-C.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Platform\Windows-MSVC.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeDetermineRCCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeRCCompiler.cmake.in;E:\cpp_workspace\protobuf\project.win32\CMakeFiles\3.6.1\CMakeRCCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeRCInformation.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeTestRCCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeCommonLanguageInclude.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeTestCCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeTestCompilerCommon.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeDetermineCompilerABI.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeParseImplicitLinkInfo.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeCCompilerABI.c;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeDetermineCompileFeatures.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeCCompiler.cmake.in;E:\cpp_workspace\protobuf\project.win32\CMakeFiles\3.6.1\CMakeCCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeCXXInformation.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeLanguageInformation.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\MSVC-CXX.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Platform\Windows-MSVC.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeCommonLanguageInclude.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeTestCXXCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeTestCompilerCommon.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeDetermineCompilerABI.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeParseImplicitLinkInfo.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeCXXCompilerABI.cpp;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeDetermineCompileFeatures.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Internal\FeatureTesting.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\MSVC-CXX-FeatureTests.cmake;E:\cpp_workspace\protobuf\project.win32\CMakeFiles\feature_tests.cxx;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeCXXCompiler.cmake.in;E:\cpp_workspace\protobuf\project.win32\CMakeFiles\3.6.1\CMakeCXXCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeDependentOption.cmake;E:\cpp_workspace\protobuf\cmake\protobuf-options.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\FindThreads.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CheckLibraryExists.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CheckSymbolExists.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CheckIncludeFile.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CheckIncludeFile.c.in;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\FindPackageHandleStandardArgs.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\FindPackageMessage.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeParseArguments.cmake;E:\cpp_workspace\protobuf\cmake\extract_includes.bat.in;E:\cpp_workspace\protobuf\cmake\libprotobuf-lite.cmake;E:\cpp_workspace\protobuf\cmake\libprotobuf.cmake;E:\cpp_workspace\protobuf\cmake\libprotoc.cmake;E:\cpp_workspace\protobuf\cmake\protoc.cmake;E:\cpp_workspace\protobuf\cmake\tests.cmake;E:\cpp_workspace\protobuf\cmake\install.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\GNUInstallDirs.cmake;E:\cpp_workspace\protobuf\cmake\protobuf.pc.cmake;E:\cpp_workspace\protobuf\cmake\protobuf-lite.pc.cmake;E:\cpp_workspace\protobuf\cmake\protobuf-config.cmake.in;E:\cpp_workspace\protobuf\cmake\protobuf-config-version.cmake.in;E:\cpp_workspace\protobuf\cmake\protobuf-module.cmake.in;E:\cpp_workspace\protobuf\cmake\protobuf-options.cmake;E:\cpp_workspace\protobuf\cmake\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:\cpp_workspace\protobuf\project.win32\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule E:/cpp_workspace/protobuf/cmake/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"D:\Program Files (x86)\CMake\bin\cmake.exe" -HE:/cpp_workspace/protobuf/cmake -BE:/cpp_workspace/protobuf/project.win32 --check-stamp-file E:\cpp_workspace\protobuf\project.win32\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:/cpp_workspace/protobuf/cmake/CMakeLists.txt;E:\cpp_workspace\protobuf\cmake\CMakeLists.txt;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeDetermineSystem.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeSystem.cmake.in;E:\cpp_workspace\protobuf\project.win32\CMakeFiles\3.6.1\CMakeSystem.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeSystemSpecificInitialize.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeDetermineCCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeDetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeDetermineCompilerId.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeCompilerIdDetection.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeParseArguments.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\ADSP-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\ARMCC-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\AppleClang-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\Borland-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\Clang-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\Cray-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\GHS-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\GNU-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\HP-C-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\IAR-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\Intel-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\MIPSpro-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\MSVC-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\PGI-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\PathScale-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\SCO-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\TI-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\Watcom-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\XL-C-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\zOS-C-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CompilerId\VS-10.vcxproj.in;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeFindBinUtils.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeCCompiler.cmake.in;E:\cpp_workspace\protobuf\project.win32\CMakeFiles\3.6.1\CMakeCCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeDetermineCXXCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeDetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Platform\Windows-CXX.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeDetermineCompilerId.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeCompilerIdDetection.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeParseArguments.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\ADSP-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\ARMCC-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\AppleClang-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\Borland-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\Clang-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\Cray-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\GHS-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\GNU-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\IAR-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\Intel-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\MIPSpro-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\MSVC-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\PGI-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\PathScale-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\SCO-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\TI-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\Watcom-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CompilerId\VS-10.vcxproj.in;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeFindBinUtils.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeCXXCompiler.cmake.in;E:\cpp_workspace\protobuf\project.win32\CMakeFiles\3.6.1\CMakeCXXCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeSystemSpecificInformation.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeGenericSystem.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Platform\Windows.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Platform\WindowsPaths.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeCInformation.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeLanguageInformation.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Platform\Windows-MSVC-C.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Platform\Windows-MSVC.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeDetermineRCCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeRCCompiler.cmake.in;E:\cpp_workspace\protobuf\project.win32\CMakeFiles\3.6.1\CMakeRCCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeRCInformation.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeTestRCCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeCommonLanguageInclude.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeTestCCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeTestCompilerCommon.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeDetermineCompilerABI.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeParseImplicitLinkInfo.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeCCompilerABI.c;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeDetermineCompileFeatures.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeCCompiler.cmake.in;E:\cpp_workspace\protobuf\project.win32\CMakeFiles\3.6.1\CMakeCCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeCXXInformation.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeLanguageInformation.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\MSVC-CXX.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Platform\Windows-MSVC.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeCommonLanguageInclude.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeTestCXXCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeTestCompilerCommon.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeDetermineCompilerABI.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeParseImplicitLinkInfo.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeCXXCompilerABI.cpp;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeDetermineCompileFeatures.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Internal\FeatureTesting.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\MSVC-CXX-FeatureTests.cmake;E:\cpp_workspace\protobuf\project.win32\CMakeFiles\feature_tests.cxx;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeCXXCompiler.cmake.in;E:\cpp_workspace\protobuf\project.win32\CMakeFiles\3.6.1\CMakeCXXCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeDependentOption.cmake;E:\cpp_workspace\protobuf\cmake\protobuf-options.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\FindThreads.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CheckLibraryExists.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CheckSymbolExists.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CheckIncludeFile.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CheckIncludeFile.c.in;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\FindPackageHandleStandardArgs.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\FindPackageMessage.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeParseArguments.cmake;E:\cpp_workspace\protobuf\cmake\extract_includes.bat.in;E:\cpp_workspace\protobuf\cmake\libprotobuf-lite.cmake;E:\cpp_workspace\protobuf\cmake\libprotobuf.cmake;E:\cpp_workspace\protobuf\cmake\libprotoc.cmake;E:\cpp_workspace\protobuf\cmake\protoc.cmake;E:\cpp_workspace\protobuf\cmake\tests.cmake;E:\cpp_workspace\protobuf\cmake\install.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\GNUInstallDirs.cmake;E:\cpp_workspace\protobuf\cmake\protobuf.pc.cmake;E:\cpp_workspace\protobuf\cmake\protobuf-lite.pc.cmake;E:\cpp_workspace\protobuf\cmake\protobuf-config.cmake.in;E:\cpp_workspace\protobuf\cmake\protobuf-config-version.cmake.in;E:\cpp_workspace\protobuf\cmake\protobuf-module.cmake.in;E:\cpp_workspace\protobuf\cmake\protobuf-options.cmake;E:\cpp_workspace\protobuf\cmake\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:\cpp_workspace\protobuf\project.win32\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule E:/cpp_workspace/protobuf/cmake/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"D:\Program Files (x86)\CMake\bin\cmake.exe" -HE:/cpp_workspace/protobuf/cmake -BE:/cpp_workspace/protobuf/project.win32 --check-stamp-file E:\cpp_workspace\protobuf\project.win32\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:/cpp_workspace/protobuf/cmake/CMakeLists.txt;E:\cpp_workspace\protobuf\cmake\CMakeLists.txt;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeDetermineSystem.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeSystem.cmake.in;E:\cpp_workspace\protobuf\project.win32\CMakeFiles\3.6.1\CMakeSystem.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeSystemSpecificInitialize.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeDetermineCCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeDetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeDetermineCompilerId.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeCompilerIdDetection.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeParseArguments.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\ADSP-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\ARMCC-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\AppleClang-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\Borland-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\Clang-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\Cray-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\GHS-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\GNU-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\HP-C-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\IAR-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\Intel-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\MIPSpro-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\MSVC-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\PGI-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\PathScale-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\SCO-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\TI-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\Watcom-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\XL-C-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\zOS-C-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CompilerId\VS-10.vcxproj.in;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeFindBinUtils.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeCCompiler.cmake.in;E:\cpp_workspace\protobuf\project.win32\CMakeFiles\3.6.1\CMakeCCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeDetermineCXXCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeDetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Platform\Windows-CXX.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeDetermineCompilerId.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeCompilerIdDetection.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeParseArguments.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\ADSP-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\ARMCC-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\AppleClang-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\Borland-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\Clang-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\Cray-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\GHS-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\GNU-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\IAR-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\Intel-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\MIPSpro-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\MSVC-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\PGI-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\PathScale-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\SCO-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\TI-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\Watcom-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CompilerId\VS-10.vcxproj.in;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeFindBinUtils.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeCXXCompiler.cmake.in;E:\cpp_workspace\protobuf\project.win32\CMakeFiles\3.6.1\CMakeCXXCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeSystemSpecificInformation.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeGenericSystem.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Platform\Windows.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Platform\WindowsPaths.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeCInformation.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeLanguageInformation.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Platform\Windows-MSVC-C.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Platform\Windows-MSVC.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeDetermineRCCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeRCCompiler.cmake.in;E:\cpp_workspace\protobuf\project.win32\CMakeFiles\3.6.1\CMakeRCCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeRCInformation.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeTestRCCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeCommonLanguageInclude.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeTestCCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeTestCompilerCommon.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeDetermineCompilerABI.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeParseImplicitLinkInfo.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeCCompilerABI.c;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeDetermineCompileFeatures.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeCCompiler.cmake.in;E:\cpp_workspace\protobuf\project.win32\CMakeFiles\3.6.1\CMakeCCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeCXXInformation.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeLanguageInformation.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\MSVC-CXX.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Platform\Windows-MSVC.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeCommonLanguageInclude.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeTestCXXCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeTestCompilerCommon.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeDetermineCompilerABI.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeParseImplicitLinkInfo.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeCXXCompilerABI.cpp;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeDetermineCompileFeatures.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Internal\FeatureTesting.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\Compiler\MSVC-CXX-FeatureTests.cmake;E:\cpp_workspace\protobuf\project.win32\CMakeFiles\feature_tests.cxx;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeCXXCompiler.cmake.in;E:\cpp_workspace\protobuf\project.win32\CMakeFiles\3.6.1\CMakeCXXCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeDependentOption.cmake;E:\cpp_workspace\protobuf\cmake\protobuf-options.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\FindThreads.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CheckLibraryExists.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CheckSymbolExists.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CheckIncludeFile.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CheckIncludeFile.c.in;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\FindPackageHandleStandardArgs.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\FindPackageMessage.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\CMakeParseArguments.cmake;E:\cpp_workspace\protobuf\cmake\extract_includes.bat.in;E:\cpp_workspace\protobuf\cmake\libprotobuf-lite.cmake;E:\cpp_workspace\protobuf\cmake\libprotobuf.cmake;E:\cpp_workspace\protobuf\cmake\libprotoc.cmake;E:\cpp_workspace\protobuf\cmake\protoc.cmake;E:\cpp_workspace\protobuf\cmake\tests.cmake;E:\cpp_workspace\protobuf\cmake\install.cmake;D:\Program Files (x86)\CMake\share\cmake-3.6\Modules\GNUInstallDirs.cmake;E:\cpp_workspace\protobuf\cmake\protobuf.pc.cmake;E:\cpp_workspace\protobuf\cmake\protobuf-lite.pc.cmake;E:\cpp_workspace\protobuf\cmake\protobuf-config.cmake.in;E:\cpp_workspace\protobuf\cmake\protobuf-config-version.cmake.in;E:\cpp_workspace\protobuf\cmake\protobuf-module.cmake.in;E:\cpp_workspace\protobuf\cmake\protobuf-options.cmake;E:\cpp_workspace\protobuf\cmake\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:\cpp_workspace\protobuf\project.win32\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\cpp_workspace\protobuf\project.win32\CMakeFiles\6be83f35ebe6a802a4a1317474db9f97\map_lite_unittest.pb.cc.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating E:/cpp_workspace/protobuf/src/google/protobuf/map_lite_unittest.pb.cc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+Debug\protoc.exe E:/cpp_workspace/protobuf/src/google/protobuf/map_lite_unittest.proto --proto_path=E:/cpp_workspace/protobuf/src --cpp_out=E:/cpp_workspace/protobuf/src
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/cpp_workspace/protobuf/project.win32/CMakeFiles/6be83f35ebe6a802a4a1317474db9f97/map_lite_unittest.pb.cc.rule;E:\cpp_workspace\protobuf\project.win32\Debug\protoc.exe;E:\cpp_workspace\protobuf\src\google\protobuf\map_lite_unittest.proto;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:\cpp_workspace\protobuf\src\google\protobuf\map_lite_unittest.pb.cc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating E:/cpp_workspace/protobuf/src/google/protobuf/map_lite_unittest.pb.cc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+Release\protoc.exe E:/cpp_workspace/protobuf/src/google/protobuf/map_lite_unittest.proto --proto_path=E:/cpp_workspace/protobuf/src --cpp_out=E:/cpp_workspace/protobuf/src
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/cpp_workspace/protobuf/project.win32/CMakeFiles/6be83f35ebe6a802a4a1317474db9f97/map_lite_unittest.pb.cc.rule;E:\cpp_workspace\protobuf\project.win32\Release\protoc.exe;E:\cpp_workspace\protobuf\src\google\protobuf\map_lite_unittest.proto;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:\cpp_workspace\protobuf\src\google\protobuf\map_lite_unittest.pb.cc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating E:/cpp_workspace/protobuf/src/google/protobuf/map_lite_unittest.pb.cc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+MinSizeRel\protoc.exe E:/cpp_workspace/protobuf/src/google/protobuf/map_lite_unittest.proto --proto_path=E:/cpp_workspace/protobuf/src --cpp_out=E:/cpp_workspace/protobuf/src
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:/cpp_workspace/protobuf/project.win32/CMakeFiles/6be83f35ebe6a802a4a1317474db9f97/map_lite_unittest.pb.cc.rule;E:\cpp_workspace\protobuf\project.win32\MinSizeRel\protoc.exe;E:\cpp_workspace\protobuf\src\google\protobuf\map_lite_unittest.proto;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:\cpp_workspace\protobuf\src\google\protobuf\map_lite_unittest.pb.cc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating E:/cpp_workspace/protobuf/src/google/protobuf/map_lite_unittest.pb.cc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+RelWithDebInfo\protoc.exe E:/cpp_workspace/protobuf/src/google/protobuf/map_lite_unittest.proto --proto_path=E:/cpp_workspace/protobuf/src --cpp_out=E:/cpp_workspace/protobuf/src
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:/cpp_workspace/protobuf/project.win32/CMakeFiles/6be83f35ebe6a802a4a1317474db9f97/map_lite_unittest.pb.cc.rule;E:\cpp_workspace\protobuf\project.win32\RelWithDebInfo\protoc.exe;E:\cpp_workspace\protobuf\src\google\protobuf\map_lite_unittest.proto;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:\cpp_workspace\protobuf\src\google\protobuf\map_lite_unittest.pb.cc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\cpp_workspace\protobuf\project.win32\CMakeFiles\6be83f35ebe6a802a4a1317474db9f97\unittest_import_lite.pb.cc.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating E:/cpp_workspace/protobuf/src/google/protobuf/unittest_import_lite.pb.cc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+Debug\protoc.exe E:/cpp_workspace/protobuf/src/google/protobuf/unittest_import_lite.proto --proto_path=E:/cpp_workspace/protobuf/src --cpp_out=E:/cpp_workspace/protobuf/src
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/cpp_workspace/protobuf/project.win32/CMakeFiles/6be83f35ebe6a802a4a1317474db9f97/unittest_import_lite.pb.cc.rule;E:\cpp_workspace\protobuf\project.win32\Debug\protoc.exe;E:\cpp_workspace\protobuf\src\google\protobuf\unittest_import_lite.proto;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:\cpp_workspace\protobuf\src\google\protobuf\unittest_import_lite.pb.cc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating E:/cpp_workspace/protobuf/src/google/protobuf/unittest_import_lite.pb.cc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+Release\protoc.exe E:/cpp_workspace/protobuf/src/google/protobuf/unittest_import_lite.proto --proto_path=E:/cpp_workspace/protobuf/src --cpp_out=E:/cpp_workspace/protobuf/src
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/cpp_workspace/protobuf/project.win32/CMakeFiles/6be83f35ebe6a802a4a1317474db9f97/unittest_import_lite.pb.cc.rule;E:\cpp_workspace\protobuf\project.win32\Release\protoc.exe;E:\cpp_workspace\protobuf\src\google\protobuf\unittest_import_lite.proto;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:\cpp_workspace\protobuf\src\google\protobuf\unittest_import_lite.pb.cc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating E:/cpp_workspace/protobuf/src/google/protobuf/unittest_import_lite.pb.cc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+MinSizeRel\protoc.exe E:/cpp_workspace/protobuf/src/google/protobuf/unittest_import_lite.proto --proto_path=E:/cpp_workspace/protobuf/src --cpp_out=E:/cpp_workspace/protobuf/src
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:/cpp_workspace/protobuf/project.win32/CMakeFiles/6be83f35ebe6a802a4a1317474db9f97/unittest_import_lite.pb.cc.rule;E:\cpp_workspace\protobuf\project.win32\MinSizeRel\protoc.exe;E:\cpp_workspace\protobuf\src\google\protobuf\unittest_import_lite.proto;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:\cpp_workspace\protobuf\src\google\protobuf\unittest_import_lite.pb.cc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating E:/cpp_workspace/protobuf/src/google/protobuf/unittest_import_lite.pb.cc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+RelWithDebInfo\protoc.exe E:/cpp_workspace/protobuf/src/google/protobuf/unittest_import_lite.proto --proto_path=E:/cpp_workspace/protobuf/src --cpp_out=E:/cpp_workspace/protobuf/src
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:/cpp_workspace/protobuf/project.win32/CMakeFiles/6be83f35ebe6a802a4a1317474db9f97/unittest_import_lite.pb.cc.rule;E:\cpp_workspace\protobuf\project.win32\RelWithDebInfo\protoc.exe;E:\cpp_workspace\protobuf\src\google\protobuf\unittest_import_lite.proto;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:\cpp_workspace\protobuf\src\google\protobuf\unittest_import_lite.pb.cc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\cpp_workspace\protobuf\project.win32\CMakeFiles\6be83f35ebe6a802a4a1317474db9f97\unittest_import_public_lite.pb.cc.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating E:/cpp_workspace/protobuf/src/google/protobuf/unittest_import_public_lite.pb.cc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+Debug\protoc.exe E:/cpp_workspace/protobuf/src/google/protobuf/unittest_import_public_lite.proto --proto_path=E:/cpp_workspace/protobuf/src --cpp_out=E:/cpp_workspace/protobuf/src
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/cpp_workspace/protobuf/project.win32/CMakeFiles/6be83f35ebe6a802a4a1317474db9f97/unittest_import_public_lite.pb.cc.rule;E:\cpp_workspace\protobuf\project.win32\Debug\protoc.exe;E:\cpp_workspace\protobuf\src\google\protobuf\unittest_import_public_lite.proto;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:\cpp_workspace\protobuf\src\google\protobuf\unittest_import_public_lite.pb.cc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating E:/cpp_workspace/protobuf/src/google/protobuf/unittest_import_public_lite.pb.cc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+Release\protoc.exe E:/cpp_workspace/protobuf/src/google/protobuf/unittest_import_public_lite.proto --proto_path=E:/cpp_workspace/protobuf/src --cpp_out=E:/cpp_workspace/protobuf/src
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/cpp_workspace/protobuf/project.win32/CMakeFiles/6be83f35ebe6a802a4a1317474db9f97/unittest_import_public_lite.pb.cc.rule;E:\cpp_workspace\protobuf\project.win32\Release\protoc.exe;E:\cpp_workspace\protobuf\src\google\protobuf\unittest_import_public_lite.proto;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:\cpp_workspace\protobuf\src\google\protobuf\unittest_import_public_lite.pb.cc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating E:/cpp_workspace/protobuf/src/google/protobuf/unittest_import_public_lite.pb.cc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+MinSizeRel\protoc.exe E:/cpp_workspace/protobuf/src/google/protobuf/unittest_import_public_lite.proto --proto_path=E:/cpp_workspace/protobuf/src --cpp_out=E:/cpp_workspace/protobuf/src
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:/cpp_workspace/protobuf/project.win32/CMakeFiles/6be83f35ebe6a802a4a1317474db9f97/unittest_import_public_lite.pb.cc.rule;E:\cpp_workspace\protobuf\project.win32\MinSizeRel\protoc.exe;E:\cpp_workspace\protobuf\src\google\protobuf\unittest_import_public_lite.proto;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:\cpp_workspace\protobuf\src\google\protobuf\unittest_import_public_lite.pb.cc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating E:/cpp_workspace/protobuf/src/google/protobuf/unittest_import_public_lite.pb.cc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+RelWithDebInfo\protoc.exe E:/cpp_workspace/protobuf/src/google/protobuf/unittest_import_public_lite.proto --proto_path=E:/cpp_workspace/protobuf/src --cpp_out=E:/cpp_workspace/protobuf/src
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:/cpp_workspace/protobuf/project.win32/CMakeFiles/6be83f35ebe6a802a4a1317474db9f97/unittest_import_public_lite.pb.cc.rule;E:\cpp_workspace\protobuf\project.win32\RelWithDebInfo\protoc.exe;E:\cpp_workspace\protobuf\src\google\protobuf\unittest_import_public_lite.proto;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:\cpp_workspace\protobuf\src\google\protobuf\unittest_import_public_lite.pb.cc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\cpp_workspace\protobuf\project.win32\CMakeFiles\6be83f35ebe6a802a4a1317474db9f97\unittest_lite.pb.cc.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating E:/cpp_workspace/protobuf/src/google/protobuf/unittest_lite.pb.cc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+Debug\protoc.exe E:/cpp_workspace/protobuf/src/google/protobuf/unittest_lite.proto --proto_path=E:/cpp_workspace/protobuf/src --cpp_out=E:/cpp_workspace/protobuf/src
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/cpp_workspace/protobuf/project.win32/CMakeFiles/6be83f35ebe6a802a4a1317474db9f97/unittest_lite.pb.cc.rule;E:\cpp_workspace\protobuf\project.win32\Debug\protoc.exe;E:\cpp_workspace\protobuf\src\google\protobuf\unittest_lite.proto;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:\cpp_workspace\protobuf\src\google\protobuf\unittest_lite.pb.cc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating E:/cpp_workspace/protobuf/src/google/protobuf/unittest_lite.pb.cc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+Release\protoc.exe E:/cpp_workspace/protobuf/src/google/protobuf/unittest_lite.proto --proto_path=E:/cpp_workspace/protobuf/src --cpp_out=E:/cpp_workspace/protobuf/src
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/cpp_workspace/protobuf/project.win32/CMakeFiles/6be83f35ebe6a802a4a1317474db9f97/unittest_lite.pb.cc.rule;E:\cpp_workspace\protobuf\project.win32\Release\protoc.exe;E:\cpp_workspace\protobuf\src\google\protobuf\unittest_lite.proto;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:\cpp_workspace\protobuf\src\google\protobuf\unittest_lite.pb.cc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating E:/cpp_workspace/protobuf/src/google/protobuf/unittest_lite.pb.cc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+MinSizeRel\protoc.exe E:/cpp_workspace/protobuf/src/google/protobuf/unittest_lite.proto --proto_path=E:/cpp_workspace/protobuf/src --cpp_out=E:/cpp_workspace/protobuf/src
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:/cpp_workspace/protobuf/project.win32/CMakeFiles/6be83f35ebe6a802a4a1317474db9f97/unittest_lite.pb.cc.rule;E:\cpp_workspace\protobuf\project.win32\MinSizeRel\protoc.exe;E:\cpp_workspace\protobuf\src\google\protobuf\unittest_lite.proto;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:\cpp_workspace\protobuf\src\google\protobuf\unittest_lite.pb.cc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating E:/cpp_workspace/protobuf/src/google/protobuf/unittest_lite.pb.cc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+RelWithDebInfo\protoc.exe E:/cpp_workspace/protobuf/src/google/protobuf/unittest_lite.proto --proto_path=E:/cpp_workspace/protobuf/src --cpp_out=E:/cpp_workspace/protobuf/src
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:/cpp_workspace/protobuf/project.win32/CMakeFiles/6be83f35ebe6a802a4a1317474db9f97/unittest_lite.pb.cc.rule;E:\cpp_workspace\protobuf\project.win32\RelWithDebInfo\protoc.exe;E:\cpp_workspace\protobuf\src\google\protobuf\unittest_lite.proto;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:\cpp_workspace\protobuf\src\google\protobuf\unittest_lite.pb.cc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\cpp_workspace\protobuf\project.win32\CMakeFiles\6be83f35ebe6a802a4a1317474db9f97\unittest_no_arena_lite.pb.cc.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating E:/cpp_workspace/protobuf/src/google/protobuf/unittest_no_arena_lite.pb.cc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+Debug\protoc.exe E:/cpp_workspace/protobuf/src/google/protobuf/unittest_no_arena_lite.proto --proto_path=E:/cpp_workspace/protobuf/src --cpp_out=E:/cpp_workspace/protobuf/src
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/cpp_workspace/protobuf/project.win32/CMakeFiles/6be83f35ebe6a802a4a1317474db9f97/unittest_no_arena_lite.pb.cc.rule;E:\cpp_workspace\protobuf\project.win32\Debug\protoc.exe;E:\cpp_workspace\protobuf\src\google\protobuf\unittest_no_arena_lite.proto;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:\cpp_workspace\protobuf\src\google\protobuf\unittest_no_arena_lite.pb.cc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating E:/cpp_workspace/protobuf/src/google/protobuf/unittest_no_arena_lite.pb.cc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+Release\protoc.exe E:/cpp_workspace/protobuf/src/google/protobuf/unittest_no_arena_lite.proto --proto_path=E:/cpp_workspace/protobuf/src --cpp_out=E:/cpp_workspace/protobuf/src
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/cpp_workspace/protobuf/project.win32/CMakeFiles/6be83f35ebe6a802a4a1317474db9f97/unittest_no_arena_lite.pb.cc.rule;E:\cpp_workspace\protobuf\project.win32\Release\protoc.exe;E:\cpp_workspace\protobuf\src\google\protobuf\unittest_no_arena_lite.proto;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:\cpp_workspace\protobuf\src\google\protobuf\unittest_no_arena_lite.pb.cc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating E:/cpp_workspace/protobuf/src/google/protobuf/unittest_no_arena_lite.pb.cc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+MinSizeRel\protoc.exe E:/cpp_workspace/protobuf/src/google/protobuf/unittest_no_arena_lite.proto --proto_path=E:/cpp_workspace/protobuf/src --cpp_out=E:/cpp_workspace/protobuf/src
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:/cpp_workspace/protobuf/project.win32/CMakeFiles/6be83f35ebe6a802a4a1317474db9f97/unittest_no_arena_lite.pb.cc.rule;E:\cpp_workspace\protobuf\project.win32\MinSizeRel\protoc.exe;E:\cpp_workspace\protobuf\src\google\protobuf\unittest_no_arena_lite.proto;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:\cpp_workspace\protobuf\src\google\protobuf\unittest_no_arena_lite.pb.cc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating E:/cpp_workspace/protobuf/src/google/protobuf/unittest_no_arena_lite.pb.cc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+RelWithDebInfo\protoc.exe E:/cpp_workspace/protobuf/src/google/protobuf/unittest_no_arena_lite.proto --proto_path=E:/cpp_workspace/protobuf/src --cpp_out=E:/cpp_workspace/protobuf/src
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:/cpp_workspace/protobuf/project.win32/CMakeFiles/6be83f35ebe6a802a4a1317474db9f97/unittest_no_arena_lite.pb.cc.rule;E:\cpp_workspace\protobuf\project.win32\RelWithDebInfo\protoc.exe;E:\cpp_workspace\protobuf\src\google\protobuf\unittest_no_arena_lite.proto;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:\cpp_workspace\protobuf\src\google\protobuf\unittest_no_arena_lite.pb.cc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="E:\cpp_workspace\protobuf\src\google\protobuf\lite_arena_unittest.cc"  />
+    <ClCompile Include="E:\cpp_workspace\protobuf\src\google\protobuf\arena_test_util.cc"  />
+    <ClCompile Include="E:\cpp_workspace\protobuf\src\google\protobuf\map_lite_test_util.cc"  />
+    <ClCompile Include="E:\cpp_workspace\protobuf\src\google\protobuf\test_util_lite.cc"  />
+    <ClCompile Include="E:\cpp_workspace\protobuf\src\google\protobuf\map_lite_unittest.pb.cc"  />
+    <ClCompile Include="E:\cpp_workspace\protobuf\src\google\protobuf\unittest_import_lite.pb.cc"  />
+    <ClCompile Include="E:\cpp_workspace\protobuf\src\google\protobuf\unittest_import_public_lite.pb.cc"  />
+    <ClCompile Include="E:\cpp_workspace\protobuf\src\google\protobuf\unittest_lite.pb.cc"  />
+    <ClCompile Include="E:\cpp_workspace\protobuf\src\google\protobuf\unittest_no_arena_lite.pb.cc"  />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="E:/cpp_workspace/protobuf/project.win32/ZERO_CHECK.vcxproj">
+      <Project>C658EF49-E84D-3FCA-821A-EE96DFD1F22E</Project>
+    </ProjectReference>
+    <ProjectReference Include="E:/cpp_workspace/protobuf/project.win32/gmock.vcxproj">
+      <Project>044DA556-3000-36F0-AD0D-1CF915852E97</Project>
+    </ProjectReference>
+    <ProjectReference Include="E:/cpp_workspace/protobuf/project.win32/gmock_main.vcxproj">
+      <Project>10976716-6404-34A4-85B8-5BEDA142553C</Project>
+    </ProjectReference>
+    <ProjectReference Include="E:/cpp_workspace/protobuf/project.win32/libprotobuf-lite.vcxproj">
+      <Project>CE4C6344-CEDB-3234-835C-A8D431B7CC99</Project>
+    </ProjectReference>
+    <ProjectReference Include="E:/cpp_workspace/protobuf/project.win32/protoc.vcxproj">
+      <Project>397CCF1C-4AC8-359A-ACE2-D69CB47505F6</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

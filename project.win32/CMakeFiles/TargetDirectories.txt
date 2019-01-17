@@ -1,0 +1,15 @@
+E:/cpp_workspace/protobuf/project.win32/CMakeFiles/libprotobuf-lite.dir
+E:/cpp_workspace/protobuf/project.win32/CMakeFiles/protoc.dir
+E:/cpp_workspace/protobuf/project.win32/CMakeFiles/libprotoc.dir
+E:/cpp_workspace/protobuf/project.win32/CMakeFiles/libprotobuf.dir
+E:/cpp_workspace/protobuf/project.win32/CMakeFiles/gmock_main.dir
+E:/cpp_workspace/protobuf/project.win32/CMakeFiles/gmock.dir
+E:/cpp_workspace/protobuf/project.win32/CMakeFiles/js_embed.dir
+E:/cpp_workspace/protobuf/project.win32/CMakeFiles/tests.dir
+E:/cpp_workspace/protobuf/project.win32/CMakeFiles/test_plugin.dir
+E:/cpp_workspace/protobuf/project.win32/CMakeFiles/lite-test.dir
+E:/cpp_workspace/protobuf/project.win32/CMakeFiles/lite-arena-test.dir
+E:/cpp_workspace/protobuf/project.win32/CMakeFiles/check.dir
+E:/cpp_workspace/protobuf/project.win32/CMakeFiles/INSTALL.dir
+E:/cpp_workspace/protobuf/project.win32/CMakeFiles/ALL_BUILD.dir
+E:/cpp_workspace/protobuf/project.win32/CMakeFiles/ZERO_CHECK.dir
